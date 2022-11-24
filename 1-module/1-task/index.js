@@ -1,9 +1,9 @@
 function factorial(n) {
-  let a = 1;
+  let num = 1;
   for (let i = 1; i <= n; i++) {
-    a = a * i;
+    num = num * i;
   }
-  return a;
+  return num;
 }
 
 factorial();
