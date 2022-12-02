@@ -1,11 +1,9 @@
 function camelize(str) {
-  let arr = str.split("-");
-  arr.forEach((item) => {
-    arr[arr.indexOf(item)] =
-      item.charAt(0).toUpperCase() + item.slice(1, item.length);
-  });
-  str = arr.join("");
-  return str.charAt(0).toLowerCase() + str.slice(1, str.length);
+  return str
+    .split("-")
+    .map((item, index) => {
+      if (index === 0) return item;
+      return item[0].toUpperCase() + item.slice(1);
+    })
+    .join("");
 }
-
-camelize();
