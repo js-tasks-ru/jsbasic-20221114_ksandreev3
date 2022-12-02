@@ -5,9 +5,8 @@ function getMinMax(str) {
     .split(" ")
     .filter((num) => isFinite(num));
 
-  let result = {
+  return {
     min: Math.min(...numbersOnly),
     max: Math.max(...numbersOnly),
   };
-  return result;
 }

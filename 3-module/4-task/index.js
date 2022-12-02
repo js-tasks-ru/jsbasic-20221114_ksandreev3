@@ -4,5 +4,3 @@ function showSalary(users, age) {
     .map((user) => `${user.name}, ${user.balance}`)
     .join("\n");
 }
-
-showSalary();
